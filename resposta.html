@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -10,7 +10,7 @@
 
     <form action="#" method="POST" enctype="multipart/form-data">
 
-    
+
         <fieldset>
             <legend>Dados Pessoais</legend>
 
@@ -25,10 +25,11 @@
             </p>
 
             <p>
-       <p>
-    <label for="telefone">Telefone Formato (xx) xxxxx-xxxx:</label><br>
-    <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999" pattern="\(\d{2}\)\s\d{4,5}-\d{4}" required>
-</p>
+            <p>
+                <label for="telefone">Telefone Formato (xx) xxxxx-xxxx:</label><br>
+                <input type="tel" id="telefone" name="telefone" placeholder="(99) 99999-9999"
+                    pattern="\(\d{2}\)\s\d{4,5}-\d{4}" required>
+            </p>
             </p>
 
             <p>
@@ -42,35 +43,50 @@
             </p>
 
             <p>
-                <label for="estado">Estado de entrega:</label><br>
-                <select id="estado" name="estado">
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espírito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
+                <label for="estado">Estado de entrega: </label><br>
+                <select id="estado" name="estado" required>
+                    <option value="">--Selecione seu estado--</option>
+                    <optgroup label="Norte">
+                        <option value="AC">Acre</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="PA">Pará</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="TO">Tocantins</option>
+                    </optgroup>
+
+                    <optgroup label="Nordeste">
+                        <option value="AL">Alagoas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="SE">Sergipe</option>
+                    </optgroup>
+
+                    <optgroup label="Centro-Oeste">
+                        <option value="DF">Distrito Federal</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                    </optgroup>
+
+                    <optgroup label="Sudeste">
+                        <option value="ES">Espírito Santo</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="SP">São Paulo</option>
+                    </optgroup>
+
+                    <optgroup label="Sul">
+                        <option value="PR">Paraná</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="SC">Santa Catarina</option>
+                    </optgroup>
                 </select>
             </p>
 
@@ -80,7 +96,7 @@
             </p>
         </fieldset>
 
-        
+
         <fieldset>
             <legend>Escolha do Carro</legend>
 
@@ -119,7 +135,7 @@
             </p>
         </fieldset>
 
-        
+
         <fieldset>
             <legend>Entrega</legend>
 
@@ -135,7 +151,7 @@
 
             <p>
                 <label for="mes-compra">Mês da compra:</label><br>
-                <input type="month" id="mes-compra" name="mes_compra"> <span>de</span>
+                <input type="month" id="mes-compra" name="mes_compra"> <span></span>
             </p>
 
             <p>
@@ -145,7 +161,7 @@
             </p>
         </fieldset>
 
-        
+
         <fieldset>
             <legend>Avaliação dos Modelos BYD</legend>
 
@@ -165,13 +181,13 @@
             </p>
         </fieldset>
 
-        
+
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
         </p>
 
     </form>
-    </body>
+</body>
 
 </html>
